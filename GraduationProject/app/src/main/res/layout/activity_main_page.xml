@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+
+    <RadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_club"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_setting"
+            android:text="社团"/>
+
+        <RadioButton
+            android:id="@+id/rb_account"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_channel"
+            android:text="用户" />
+
+        <RadioButton
+            android:id="@+id/rb_message"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_message"
+            android:text="消息"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_better"
+            android:text="我" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/rg_tab_bar"
+        android:background="@color/div_white" />
+
+    <FrameLayout
+        android:id="@+id/ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/div_tab_bar"
+        android:layout_below="@id/ly_top_bar"></FrameLayout>
+
+    <View
+        android:id="@+id/point"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/ly_content"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/red"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/red"
+        android:layout_toRightOf="@+id/point"
+        android:layout_below="@+id/ly_content"
+        android:layout_marginLeft="20dp"/>
+
+</RelativeLayout>

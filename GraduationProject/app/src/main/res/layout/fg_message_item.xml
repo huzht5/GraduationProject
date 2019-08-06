@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:src="@drawable/user"/>
+
+    <LinearLayout
+        android:layout_weight="6"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/account_name"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="用户名"
+                android:paddingLeft="10dp"
+                android:gravity="left"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="时间"
+                android:gravity="center"
+                android:textSize="15dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:text="消息内容"
+            android:gravity="left"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tip"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/red"/>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.graduationproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginAndRegisterActivity"/>
+        <activity android:name=".MainPageActivity"/>
+        <activity android:name=".NoConnectionActivity"/>
+        <activity android:name=".ClubInformationActivity"/>
+        <activity android:name=".AccountInformationActivity"/>
+        <activity android:name=".MyAccountBlogActivity"/>
+        <activity android:name=".ChangeMyAccountInformationActivity"/>
+        <activity android:name=".MyClubActivity"/>
+        <activity android:name=".CreateClubActivity"/>
+        <activity android:name=".CreateAccountBlogActivity"/>
+        <activity android:name=".MyClubInformationActivity"/>
+        <activity android:name=".ChangeMyClubInformationActivity"/>
+        <activity android:name=".MyClubBlogActivity"/>
+        <activity android:name=".CreateClubBlogActivity"/>
+        <activity android:name=".BothClubsActivity"/>
+        <activity android:name=".MyFollowedClubsActivity"/>
+        <activity android:name=".FindMoreClubsActivity"/>
+        <activity android:name=".FindClubResultActivity"/>
+        <activity android:name=".MyFollowedAccountsActivity"/>
+        <activity android:name=".FindMoreAccountsActivity"/>
+        <activity android:name=".FindAccountResultActivity"/>
+        <activity android:name=".MyClubSignInActivity"/>
+        <activity android:name=".CreateClubSignInActivity"/>
+        <activity android:name=".CheckSignActivity"/>
+        <activity android:name=".SignInActivity"/>
+        <activity android:name=".ChatActivity"
+                   android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+</manifest>
